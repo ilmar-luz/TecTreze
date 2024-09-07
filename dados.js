@@ -3,6 +3,7 @@ let dados = [
         titulo: "Echo Dot 5ª geração",
         descricao: "O Echo Dot 5ª geração é um alto-falante inteligente compacto e poderoso, ideal para controlar sua casa inteligente por voz. Com o Alexa, você pode tocar música, fazer chamadas, definir alarmes, controlar dispositivos compatíveis e muito mais. O design elegante e discreto se encaixa em qualquer ambiente.",
         link: "https://www.amazon.com.br/dp/B096V38Q9G"
+        tags: "alexa"
     },
     {
         titulo: "GoPro Hero7",
