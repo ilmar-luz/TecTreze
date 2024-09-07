@@ -7,7 +7,7 @@ function pesquisar() {
 
     // se campoPesquisa for uma string sem nada
     if (campoPesquisa == "") {
-        section.innerHTML = "Não encontrado"
+        section.innerHTML = "<p>Nada foi encontrado</p>"
         return
     }
 
@@ -23,7 +23,6 @@ function pesquisar() {
     for (let dado of dados) {
         titulo = dado.titulo.toLowerCase()
         descricao = dado.descricao.toLowerCase()
-        tags = dado.tags.toLowerCase()
 
         if (dado.titulo.includes(campoPesquisa) || dado.descricao.includes(campoPesquisa) || tags.includes) {
             // Cria um novo elemento HTML para cada resultado
@@ -36,6 +35,9 @@ function pesquisar() {
                 <a href=${dado.link} target="_blank">Mais informações</a>
             </div>
             `}
+    }
+    if (!resultados) {
+        resultados = "<p>Nada foi encontrado</p>"
     }
 
     // Atribui os resultados gerados à seção HTML
